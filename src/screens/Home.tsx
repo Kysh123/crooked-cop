@@ -30,6 +30,7 @@ export function Home({ game, onTable }: { game: Game; onTable: () => void }) {
   return (
     <main className="home">
       <div className="home-card">
+        {/* Keep the original logo */}
         <img
           src="/assets/logo-crooked-cop.png"
           alt=""
@@ -41,12 +42,14 @@ export function Home({ game, onTable }: { game: Game; onTable: () => void }) {
         <h1 className="visually-hidden">The Crooked Cop</h1>
 
         <p className="h2-tagline">
-          He swore to protect. He chose to betray.
+          He swore to protect.
+          <br />
+          He chose to betray.
         </p>
 
         <p className="h2-intro">
-          A hidden-role chase for 4 to 8 players. One or two Heisters race across the rail network for Artifacts while the
-          Police hunt them, and one officer is secretly feeding the thieves.
+          A hidden-role chase where Police hunt Heisters and one officer
+          secretly betrays the team.
         </p>
 
         <label className="h2-field">
